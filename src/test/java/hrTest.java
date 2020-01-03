@@ -20,14 +20,14 @@ public class hrTest {
          input.add(67);
          input.add(38);
          input.add(33);
-         List<Integer> result = hr.gradeStudent(input);
-         List<Integer> Expect = new ArrayList<>();
-         Expect.add(75);
-         Expect.add(67);
-         Expect.add(40);
-         Expect.add(33);
+         List<Integer> result = hr.gradeStudents(input);
+         List<Integer> expects = new ArrayList<>();
+         expects.add(75);
+         expects.add(67);
+         expects.add(40);
+         expects.add(33);
+         assertThat(result.toArray(), is(expects.toArray()));
 
-         assertThat(result.toArray(), is(Expect.toArray()));
-     }//gradeStudentTest
+     }
 
-}//hrTest
+}
