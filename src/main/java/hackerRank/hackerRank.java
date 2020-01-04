@@ -15,7 +15,7 @@ public class hackerRank {
 
     }
 
-    private int calculateGrade(int originGrade){
+    public int calculateGrade(int originGrade){
 
         int multipleValue = 5 ;
         int valueCheck = originGrade % multipleValue ;
@@ -32,6 +32,9 @@ public class hackerRank {
         return resultValue;
 
     }
+
+
+
 
 
 }
