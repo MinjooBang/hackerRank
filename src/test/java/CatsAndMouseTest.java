@@ -31,4 +31,8 @@ public class CatsAndMouseTest {
         assertThat(result, is("Mouse C"));
 
     }
+    @Test(expected = RuntimeException.class)
+    public void validatorException() {
+        solve.catAndMouse(15,12,15);
+    }
 }
