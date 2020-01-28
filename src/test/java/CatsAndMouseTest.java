@@ -34,5 +34,7 @@ public class CatsAndMouseTest {
     @Test(expected = RuntimeException.class)
     public void validatorException() {
         solve.catAndMouse(15,12,15);
+        solve.catAndMouse(0,12,15);
+        solve.catAndMouse(2,103,15);
     }
 }
