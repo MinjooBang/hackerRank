@@ -8,21 +8,14 @@ import static org.junit.Assert.assertThat;
 
 /**
  * @url : https://www.hackerrank.com/challenges/circular-array-rotation/problem
- * 입력받은 순환 수 만큼 배열을 재배열
- * 입력받은 요소값의 재배열의 값을 출력
- * Constraints
- *  1 <= n <= 10^5
- *  1 <= a[i] <= 10^5
- *  1 <= k <= 10^5
- *  1 <= q <= 500
- *  0 <= m < n
+
  */
 public class CircularArrayRotationTest {
 
-   public CircularArray solve ;
+    private CircularArray solve ;
 
-   @Before
-   public void init(){
+    @Before
+    public void init(){
        solve = new CircularArrayRotation();
     }
 
@@ -47,5 +40,6 @@ public class CircularArrayRotationTest {
         assertThat(result, is(expected));
 
     }
+
 
 }
