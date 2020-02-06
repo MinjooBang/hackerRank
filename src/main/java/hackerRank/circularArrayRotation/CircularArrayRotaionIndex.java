@@ -1,6 +1,6 @@
 package hackerRank.circularArrayRotation;
 
-public class CircluarArrayRotaionIdex implements CircularArray {
+public class CircularArrayRotaionIndex implements CircularArray {
     @Override
     public int[] circularArrayRotation( int[] inputArray, int cycle, int[] queries) {
         int patternNum =  cycle % inputArray.length;

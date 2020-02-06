@@ -1,6 +1,5 @@
-import hackerRank.circularArrayRotation.CircluarArrayRotaionIdex;
+import hackerRank.circularArrayRotation.CircularArrayRotaionIndex;
 import hackerRank.circularArrayRotation.CircularArray;
-import hackerRank.circularArrayRotation.CircularArrayRotation;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -17,7 +16,7 @@ public class CircularArrayRotationTest {
 
     @Before
     public void init(){
-       solve = new CircluarArrayRotaionIdex();
+       solve = new CircularArrayRotaionIndex();
     }
 
     /**
