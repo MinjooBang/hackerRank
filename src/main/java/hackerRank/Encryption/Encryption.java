@@ -1,6 +1,7 @@
 package hackerRank.Encryption;
 
 public class Encryption{
+
     public String makeEncryption(String input){
         double norm =  Math.sqrt(input.trim().length());
         int rows = (int) Math.floor(norm);
@@ -25,6 +26,7 @@ public class Encryption{
             }
             result += " ";
         }
+
         return result;
     }
 }
