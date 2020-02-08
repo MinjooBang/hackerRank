@@ -1,26 +1,24 @@
 package hackerRank.Encryption;
 
 public class Encryption{
-
     public String makeEncryption(String input){
-        double norm =  Math.sqrt(input.trim().length());
-        int row = (int) Math.floor(norm);
-        int columns = (int) Math.ceil(norm);
-        if(row*columns < input.length()){
-            row = (int) Math.round(norm);
-            columns = (int) Math.round(norm);
-        }
         String output = "" ;
-        for(int index = 0;index < columns;index++){
-            String conString= "";
-            for(int index2=0;index2<row;index2++){
-                int reStart = index2*columns+index;
+        double norm =  Math.sqrt(input.trim().length());
+        int rows = (int) Math.floor(norm);
+        int colums = (int) Math.ceil(norm);
+        if(rows*colums < input.length()){
+            rows = (int) Math.round(norm);
+            colums = (int) Math.round(norm);
+        }
+        for(int index = 0;index < colums;index++){
+            for(int index2=0;index2<rows;index2++){
+                int reStart = index2*colums+index;
                 int reLast = reStart+1;
                 if(reLast <= input.length()) {
-                    conString += input.substring(reStart, reLast);
+                    output += input.substring(reStart, reLast);
                 }
             }
-            output += conString+" ";
+            output += " ";
         }
         return output;
     }
