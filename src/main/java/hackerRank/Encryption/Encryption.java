@@ -8,7 +8,6 @@ public class Encryption{
         int colums = (int) Math.ceil(norm);
         if(rows * colums < input.length()){
             rows = (int) Math.round(norm);
-            colums = (int) Math.round(norm);
         }
 
         return outputText(input,rows,colums);
