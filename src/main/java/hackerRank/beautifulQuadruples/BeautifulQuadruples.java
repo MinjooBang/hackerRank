@@ -1,16 +1,10 @@
 package hackerRank.beautifulQuadruples;
-
-import java.lang.reflect.Array;
 import java.util.*;
 
 public class BeautifulQuadruples {
-    static int [] arr = new int[4];
-    static ArrayList alist = new ArrayList<>();
-    static String addString  = "";
-    static String s1="";
-    static String s2="";
-    static String s3="";
-    static String s4="";
+    static long [] arr = new long[4];
+    static String addString;
+    static Stack<String> st = new Stack<String>();
 
     public int makeOutput(int i, int i1, int i2, int i3) {
 
@@ -28,14 +22,16 @@ public class BeautifulQuadruples {
 
                             addString = String.valueOf(arr[0])+String.valueOf(arr[1])
                                     +String.valueOf(arr[2])+String.valueOf(arr[3]);
-                            alist.add(addString);
+
+                            if (!st.contains(addString)) {
+                                st.add(addString);
+                            }
                         }
 
                     }
                 }
             }
         }
-        List<Arrays> list = new ArrayList<Arrays>(new HashSet<Arrays>(alist));
-        return list.size();
+        return st.size();
     }
 }
