@@ -15,10 +15,12 @@ public class Encryption{
 
     private String outputText(String text,int rows,int colums){
         String result = "";
+        int reStart = 0;
+        int reLast = 0;
         for(int columsNum = 0;columsNum < colums;columsNum++){
             for(int rowNum = 0;rowNum < rows;rowNum++){
-                int reStart = rowNum * colums + columsNum;
-                int reLast  = reStart+1;
+                reStart = rowNum * colums + columsNum;
+                reLast  = reStart+1;
                 if(reLast <= text.length()){
                     result += text.substring(reStart,reLast);
                 }
